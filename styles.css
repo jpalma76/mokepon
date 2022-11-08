@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins&display=swap');
+
+body {
+  font-family: 'Fredoka One', cursive;
+  background-color: #041562;
+  color: white;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 32px;
+  color: white;
+}
+
+.subtitulo {
+  font-size: 20px;
+  color: white;
+}
+
+.tarjetas, .tarjetas-ataques {
+  display: flex;
+  gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+  color: white;
+  width: 180px;
+  height: 100px;
+  background: aquamarine;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 10px;
+  border: 1px solid hotpink;
+  background-color: #11468f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background: #5d8bf4;
+}
+
+.tarjeta-de-mokepon img {
+  width: 80px;
+}
+
+#boton-mascota {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  margin-top: 30px;
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+#seleccionar-ataque {
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.boton-de-ataque {
+  font-family: 'Poppins', sans-serif;
+  background-color: #11468f;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border-color: transparent;
+  border: 1px solid white ;
+  width: 100px;
+  color: white;
+}
+
+
+#mensajes {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background: #eeeeee;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+#boton-reiniciar {
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  border: none;
+  color: #11486f;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  text-align: center;
+  border: 1px solid white;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+}
+
+@media(max-width: 360px) {
+  .tarjetas  {
+    flex-direction: column;
+    align-items: center;
+    font-size: 12;
+  }
+
+  .tarjetas-ataques {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mensajes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+  }
+}
